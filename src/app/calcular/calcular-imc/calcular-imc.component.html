@@ -1,0 +1,60 @@
+<div class="container-fluid">
+  <form #f="ngForm" autocomplete="off">
+    <div class="row">
+      <div class="col-lg-6 col-12 offset-lg-1">
+        <div class="jumbotron">
+          <div class="col-12 ui-fluid">
+            <h2 style="text-align: center">Calcular IMC</h2>
+          </div>
+          <div class="col-12 ui-fluid">
+            <h4 class="mt-2">Nome</h4>
+            <input pInputText pKeyFilter="alpha" type="text" name="nome" ngModel #nome="ngModel" required />
+          </div>
+
+          <div class="col-12 ui-fluid">
+            <h4 class="mt-2">Sexo</h4>
+            <p-radioButton class="mr-3" name="sexo" #sexo="ngModel" ngModel value="Masculino" label="Masculino"
+              required></p-radioButton>
+            <p-radioButton name="sexo" #sexo="ngModel" ngModel value="Feminino" label="Feminino" required>
+            </p-radioButton>
+          </div>
+
+          <div class="col-12 ui-fluid">
+            <h4 class="mt-2">Altura</h4>
+            <input pInputText pKeyFilter="pnum" type="text" name="altura" ngModel #altura="ngModel" required />
+          </div>
+
+          <div class="col-12 ui-fluid">
+            <h4 class="mt-2">Peso</h4>
+            <input pKeyFilter="pnum" pInputText type="text" name="peso" ngModel #peso="ngModel" required />
+          </div>
+          <div class="col-12 ui-fluid">
+            <button class="mt-2 ui-button-raised" pButton type="submit" [disabled]="f.invalid" (click)="
+                adicionar(f, nome.value, altura.value, peso.value, sexo.value)
+              " label="Calcular"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-12 ui-fluid">
+        <div class="jumbotron" style="background-color: whitesmoke">
+          <button pButton class="mt-2 ui-button-raised" type="button" routerLink="/listar"
+            label="Listar participantes"></button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5 col-12 offset-lg-1">
+        <div class="jumbotron" style="background-color: whitesmoke">
+          <p-chart type="pie" [data]="dataPeso" [responsive]="true"></p-chart>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-12">
+        <div class="jumbotron" style="background-color: whitesmoke">
+          <p-chart type="pie" [data]="dataSexo" [responsive]="true"></p-chart>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

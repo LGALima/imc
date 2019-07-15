@@ -1,0 +1,35 @@
+<div class="container mt-3">
+    <form #f="ngForm">
+        <div class="row">
+
+            <div class="col-12">
+                <p-table [value]="pessoa" [paginator]="true" [rows]="5" [responsive]="true" [globalFilterFields]="['nome']">
+
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th>Nome</th>
+                            <th>Sexo</th>
+                            <th>Peso</th>
+                            <th>Altura</th>
+                            <th>IMC</th>
+                            <th>Nivel de saúde</th>
+                            <th></th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-pessoa>
+                        <tr>
+                            <td>{{pessoa.pessoaDados.nome}}</td>
+                            <td>{{pessoa.pessoaDados.sexo}}</td>
+                            <td>{{pessoa.pessoaDados.dados.altura}} Kg</td>
+                            <td>{{pessoa.pessoaDados.dados.altura}} m</td>
+                            <td>{{pessoa.dadoCalculo.imc.imc}}</td>
+                            <td>{{pessoa.dadoCalculo.status}}</td>
+                            <td style="text-align: center"><button pButton pTooltip="Excluir" tooltipPosition="top" icon="fa fa-trash" (click)="excluir(pessoa)"></button></td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+        <button routerLink="/calcular" class="mt-2" pButton label="Voltar" type="button"></button>
+    </form>
+</div>

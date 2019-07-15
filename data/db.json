@@ -1,0 +1,154 @@
+{
+  "imc": [
+    {
+      "id": 1,
+      "pessoaDados": {
+        "nome": "Lusca",
+        "sexo": "Masculino",
+        "altura": 1.7,
+        "peso": 64
+      },
+      "dadoCalculo": {
+        "categoria": {
+          "status": "Abaixo do Peso",
+          "id": 0
+        },
+        "imc": 18
+      }
+    },
+    {
+      "pessoaDados": {
+        "nome": "asasasas",
+        "sexo": "Feminino",
+        "peso": "2434",
+        "altura": "12121"
+      },
+      "dadoCalculo": {
+        "categoria": {
+          "id": 0,
+          "status": "Abaixo do peso"
+        },
+        "imc": 0
+      },
+      "id": 2
+    },
+    {
+      "pessoaDados": {
+        "nome": "ei",
+        "sexo": "Masculino",
+        "peso": "213213231",
+        "altura": "12"
+      },
+      "dadoCalculo": {
+        "categoria": {
+          "id": 4,
+          "status": "Obeso"
+        },
+        "imc": 1480647.44
+      },
+      "id": 3
+    },
+    {
+      "pessoaDados": {
+        "nome": "aaa",
+        "sexo": "Masculino",
+        "peso": "50",
+        "altura": "1"
+      },
+      "dadoCalculo": {
+        "categoria": {
+          "id": 4,
+          "status": "Obeso"
+        },
+        "imc": 50
+      },
+      "id": 4
+    },
+    {
+      "pessoaDados": {
+        "nome": "qwqwq",
+        "sexo": "Feminino",
+        "peso": "21323232131",
+        "altura": "12"
+      },
+      "dadoCalculo": {
+        "categoria": {
+          "id": 4,
+          "status": "Obeso"
+        },
+        "imc": 148078000.91
+      },
+      "id": 5
+    },
+    {
+      "pessoaDados": {
+        "nome": "asa",
+        "sexo": "Masculino",
+        "peso": "121",
+        "altura": "12"
+      },
+      "dadoCalculo": {
+        "categoria": {
+          "id": 4,
+          "status": "Obeso"
+        },
+        "imc": 23
+      },
+      "id": 6
+    },
+    {
+      "pessoaDados": {
+        "nome": "Gabriel",
+        "sexo": "Masculino",
+        "peso": "120",
+        "altura": "1.90"
+      },
+      "dadoCalculo": {
+        "categoria": {
+          "id": 4,
+          "status": "Obeso"
+        },
+        "imc": 33.24
+      },
+      "id": 11
+    },
+    {
+      "pessoaDados": {
+        "nome": "aa",
+        "sexo": "Feminino",
+        "peso": "121212",
+        "altura": "12"
+      },
+      "dadoCalculo": {
+        "categoria": {
+          "id": 4,
+          "status": "Obeso"
+        },
+        "imc": 841.75
+      },
+      "id": 12
+    }
+  ],
+  "categoria": [
+    {
+      "status": "Abaixo do Peso",
+      "id": 0
+    },
+    {
+      "status": "Peso normal",
+      "id": 1
+    },
+    {
+      "status": "Levemente acima do peso",
+      "id": 2
+    },
+    {
+      "status": "Acima do peso",
+      "id": 3
+    },
+    {
+      "status": "Obeso",
+      "id": 4
+    }
+  ]
+}
